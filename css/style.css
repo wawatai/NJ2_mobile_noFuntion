@@ -1070,29 +1070,35 @@ html body .ad .single-item .slick-dots li.slick-active button::before {
 html body .multiple-items.card {
   width: 100%;
   height: 180px;
-  margin: 0 auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
 }
-html body .multiple-items.card .slick-list {
-  height: 100%;
-}
-html body .multiple-items.card .slick-list .slick-track li.slick-center .cardBG .nameBox p {
+html body .multiple-items.card li.slick-center .cardBG .nameBox p {
   text-shadow: 2px 4px 3px #00000080;
 }
-html body .multiple-items.card .slick-list .slick-track li.slick-center .cardBG .num {
+html body .multiple-items.card li.slick-center .cardBG .num {
   text-shadow: 2px 4px 3px #00000080;
 }
-html body .multiple-items.card .slick-list .slick-track li .cardBG {
+html body .multiple-items.card li .cardBG {
   width: 275px;
   height: 160px;
-  margin: 0 auto;
+  margin-right: 20px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   position: relative;
 }
-html body .multiple-items.card .slick-list .slick-track li .cardBG.auditing .audit {
+html body .multiple-items.card li .cardBG:last-child {
+  margin: 0;
+}
+html body .multiple-items.card li .cardBG.auditing .audit {
   display: block;
 }
-html body .multiple-items.card .slick-list .slick-track li .cardBG .audit {
+html body .multiple-items.card li .cardBG .audit {
   display: none;
   width: 89px;
   height: 23px;
@@ -1100,7 +1106,7 @@ html body .multiple-items.card .slick-list .slick-track li .cardBG .audit {
   top: 15px;
   left: 0;
 }
-html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox {
+html body .multiple-items.card li .cardBG .nameBox {
   width: auto;
   height: auto;
   position: absolute;
@@ -1108,16 +1114,16 @@ html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox {
   right: 16px;
   text-align: right;
 }
-html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox p {
+html body .multiple-items.card li .cardBG .nameBox p {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
 }
-html body .multiple-items.card .slick-list .slick-track li .cardBG .nameBox p:first-child {
+html body .multiple-items.card li .cardBG .nameBox p:first-child {
   font-size: 22px;
   margin-bottom: 10px;
 }
-html body .multiple-items.card .slick-list .slick-track li .cardBG .num {
+html body .multiple-items.card li .cardBG .num {
   width: 100%;
   color: #ffffff;
   font-size: 21px;
@@ -1127,44 +1133,6 @@ html body .multiple-items.card .slick-list .slick-track li .cardBG .num {
   position: absolute;
   left: 0;
   bottom: 20px;
-}
-html body .multiple-items.card .slick-arrow {
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  background: #b3925a;
-  border-radius: 50%;
-  top: 45%;
-}
-html body .multiple-items.card .slick-arrow:hover, html body .multiple-items.card .slick-arrow:active, html body .multiple-items.card .slick-arrow.active {
-  opacity: 1;
-}
-html body .multiple-items.card .slick-arrow::before {
-  display: block;
-  color: transparent;
-  width: 18px;
-  height: 9px;
-  position: absolute;
-  left: 46%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-filter: grayscale(1) brightness(15);
-          filter: grayscale(1) brightness(15);
-}
-html body .multiple-items.card .slick-arrow.slick-prev {
-  left: 0;
-}
-html body .multiple-items.card .slick-arrow.slick-prev::before {
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-          transform: translate(-50%, -50%) rotate(90deg);
-}
-html body .multiple-items.card .slick-arrow.slick-next {
-  right: 0;
-}
-html body .multiple-items.card .slick-arrow.slick-next::before {
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-          transform: translate(-50%, -50%) rotate(-90deg);
 }
 html body .marqueeBox {
   width: 96%;
