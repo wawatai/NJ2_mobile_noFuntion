@@ -297,9 +297,9 @@
                 }
 
                 .checkBtn {
-                    width: 100%;
+                    width: 70%;
                     height: 9.87vw;
-                    @include mainBtn;
+                    @include signupBtn;
                     flex-shrink: 0;
                 }
             }
@@ -558,7 +558,7 @@
                 button {
                     width: 70%;
                     height: 42px;
-                    @include mainBtn;
+                    @include signupBtn;
                     margin-bottom: 12px;
                 }
 

@@ -53,24 +53,24 @@ header .link_ic {
 }
 
 //footer
-footer.index {
-    background: url('../images/footer_index.png') no-repeat;
+footer .home::before {
+    background: url('../images/icon/svg/home.svg') no-repeat;
     background-size: 100%;
 }
-footer.event {
-    background: url('../images/footer_event.png') no-repeat;
+footer .promotion::before {
+    background: url('../images/icon/svg/promotion.svg') no-repeat;
     background-size: 100%;
 }
-footer.wallet {
-    background: url('../images/footer_wallet.png') no-repeat;
+footer .wallet::before {
+    background: url('../images/icon/svg/wallet.svg') no-repeat;
     background-size: 100%;
 }
-footer.service {
-    background: url('../images/footer_service.png') no-repeat;
+footer  .cs::before {
+    background: url('../images/icon/svg/customer.svg') no-repeat;
     background-size: 100%;
 }
-footer.user {
-    background: url('../images/footer_user.png') no-repeat;
+footer .member::before {
+    background: url('../images/icon/svg/user.svg') no-repeat;
     background-size: 100%;
 }
 
@@ -409,6 +409,10 @@ footer.user {
 }
 .helpInner .img.help_about_license {
     background: url('../images/help/help_about_license.png') no-repeat;
+    background-size: contain;
+}
+.helpInner .img.depositWay {
+    background: url('../images/help/help_depositWay.jpg') no-repeat;
     background-size: contain;
 }
 
