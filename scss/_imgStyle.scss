@@ -54,24 +54,24 @@ header .link_ic {
 
 //footer
 footer .home::before {
-    background: url('../images/icon/svg/home.svg') no-repeat;
-    background-size: 100%;
+    background: url('../images/icon/svg/home.svg') no-repeat center;
+    background-size: contain;
 }
 footer .promotion::before {
-    background: url('../images/icon/svg/promotion.svg') no-repeat;
-    background-size: 100%;
+    background: url('../images/icon/svg/promotion.svg') no-repeat center;
+    background-size: contain;
 }
 footer .wallet::before {
-    background: url('../images/icon/svg/wallet.svg') no-repeat;
-    background-size: 100%;
+    background: url('../images/icon/svg/wallet.svg') no-repeat center;
+    background-size: contain;
 }
 footer  .cs::before {
-    background: url('../images/icon/svg/customer.svg') no-repeat;
-    background-size: 100%;
+    background: url('../images/icon/svg/customer.svg') no-repeat center;
+    background-size: contain;
 }
 footer .member::before {
-    background: url('../images/icon/svg/user.svg') no-repeat;
-    background-size: 100%;
+    background: url('../images/icon/svg/user.svg') no-repeat center;
+    background-size: contain;
 }
 
 //slotPage
